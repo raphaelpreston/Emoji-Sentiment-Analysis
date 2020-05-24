@@ -88,9 +88,9 @@ for code in ourEmojiCodes:
                 pass
         print()
 
-    # write all tweets for this code to new file
-    with open("{}/cleaned/{}.json".format(DIR_PREFIX, code), "w+") as f:
-        json.dump(cleanedTweets, f, indent=2)
+        # write all tweets for this code to new file
+        with open("{}/cleaned/{}.json".format(DIR_PREFIX, code), "w+") as f:
+            json.dump(cleanedTweets, f, indent=2)
 
 print()
 sys.stdout.flush()
