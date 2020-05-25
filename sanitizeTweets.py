@@ -10,6 +10,7 @@ from langdetect import detect
 
 
 DIR_PREFIX = "training_tweets/"
+JSON_FNAME = "our_emojis.json"
 
 def replaceLineWith(s):
     sys.stdout.write('\r')
@@ -32,12 +33,17 @@ englRe = re.compile(r"[^1234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRST
 spPuncRe = re.compile(r"\s([.,;:])")
 multSpaceRe = re.compile(r"\s{2,}")
 
-# get all our emoji codes
-with open("our_emojis.json", "r") as f:
-    ourEmojiCodes = [code for code in json.load(f)]
+# get our emoji json data
+with open(JSON_FNAME, "r") as f:
+    ourEmojiData = json.load(f)
 
+ourEmojiCodes = [code for code in ourEmojiData] # all our emoji codes
+
+# import everything that hasn't been set as imported
 codesImported = 0
-for code in ourEmojiCodes:
+# for code in [code for code in ourEmojiCodes if not ourEmojiData[code]['imported']]:
+code = "1F61C"
+if True:
     # print progress
     codesImported += 1
     print("Analyzing code {}/{} ({})".format(codesImported, len(ourEmojiCodes), code))
@@ -47,11 +53,18 @@ for code in ourEmojiCodes:
     filesImported = 0
     allTweets = []
     for file in myDir: # read tweets into list
-        with open("{}/raw/{}/{}".format(DIR_PREFIX, code, os.fsdecode(file))) as f:
-            myTweets = json.load(f)
-            allTweets.extend(myTweets)
-            filesImported += 1
-        replaceLineWith("  Importing {}/{}".format(filesImported, len(myDir)))
+        fileName = "{}raw/{}/{}".format(DIR_PREFIX, code, os.fsdecode(file))
+        try:
+            with open(fileName, "r") as f:
+                myTweets = json.load(f)
+                allTweets.extend(myTweets)
+                filesImported += 1
+            replaceLineWith("  Importing {}/{}".format(filesImported, len(myDir)))
+        except Exception as e:
+            print("\nFailed to read JSON from {}".format(fileName))
+
+    # for testing
+    allTweets = allTweets[:1000]
 
     if filesImported > 0:
         print()
@@ -88,9 +101,18 @@ for code in ourEmojiCodes:
                 pass
         print()
 
+        # update json data for this code
+        ourEmojiData[code]['total-tweets'] = len(allTweets)
+        ourEmojiData[code]['clean-tweets'] = len(cleanedTweets)
+        ourEmojiData[code]['imported'] = True
+
         # write all tweets for this code to new file
         with open("{}/cleaned/{}.json".format(DIR_PREFIX, code), "w+") as f:
             json.dump(cleanedTweets, f, indent=2)
+
+# update our emoji json
+with open(JSON_FNAME, "w") as f:
+    json.dump(ourEmojiData, f, indent=4)
 
 print()
 sys.stdout.flush()

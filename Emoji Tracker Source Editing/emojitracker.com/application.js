@@ -165,15 +165,20 @@ config
 
   // -- Added by Raphael
   allTweets = [];
-  downloadIter = 500;
+  downloadIter = 300;
   downloadedCount = 0;
+  forceDownload = false;
   // --
   processDetailTweetUpdate = function(event) {
     // --- Added by Raphael
     allTweets.push(JSON.parse(event.data).text);
     l = allTweets.length;
-    if (l % downloadIter == 0) {
-      console.log("Hit " + downloadIter + ". Downloading tweets and resetting counter.");
+    
+    if (forceDownload || l % downloadIter == 0) {
+      if (!forceDownload) {
+        console.log("Hit " + downloadIter + ". Downloading tweets and resetting counter.");
+      }
+      forceDownload = false;
       hrefSplit = window.location.href.split("/");
       emojiName = hrefSplit[hrefSplit.length - 1];
       console.save(allTweets, emojiName.toString() + "_" + downloadedCount + ".json");

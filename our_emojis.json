@@ -3,210 +3,247 @@
         "name": "SMILING FACE WITH HEART-SHAPED EYES",
         "track-link": "https://emojitracker.com/details/1F60D",
         "desc-link": "https://emojipedia.org/smiling-face-with-heart-eyes/",
-        "emoji": "😍"
+        "emoji": "\ud83d\ude0d",
+        "imported": false
     },
     "1F602": {
         "name": "FACE WITH TEARS OF JOY",
         "track-link": "https://emojitracker.com/details/1F602",
         "desc-link": "https://emojipedia.org/face-with-tears-of-joy/",
-        "emoji": "😂"
+        "emoji": "\ud83d\ude02",
+        "imported": false
     },
     "2764": {
         "name": "HEAVY BLACK HEART",
         "track-link": "https://emojitracker.com/details/2764",
         "desc-link": "https://emojipedia.org/red-heart/",
-        "emoji": "❤️"
+        "emoji": "\u2764\ufe0f",
+        "imported": false
     },
     "1F618": {
         "name": "FACE THROWING A KISS",
         "track-link": "https://emojitracker.com/details/1F618",
         "desc-link": "https://emojipedia.org/red-heart/",
-        "emoji": "😘"
+        "emoji": "\ud83d\ude18",
+        "imported": false
     },
     "1F62D": {
         "name": "LOUDLY CRYING FACE",
         "track-link": "https://emojitracker.com/details/1F62D",
         "desc-link": "https://emojipedia.org/loudly-crying-face/",
-        "emoji": "😭"
+        "emoji": "\ud83d\ude2d",
+        "imported": false
     },
     "1F44D": {
         "name": "THUMBS UP SIGN",
         "track-link": "https://emojitracker.com/details/1F44D",
         "desc-link": "https://emojipedia.org/thumbs-up/",
-        "emoji": "👍"
+        "emoji": "\ud83d\udc4d",
+        "imported": false
     },
     "1F60A": {
         "name": "SMILING FACE WITH SMILING EYES",
         "track-link": "https://emojitracker.com/details/1F60A",
         "desc-link": "https://emojipedia.org/smiling-face-with-smiling-eyes/",
-        "emoji": "😊"
+        "emoji": "\ud83d\ude0a",
+        "imported": false
     },
     "1F609": {
         "name": "WINKING FACE",
         "track-link": "https://emojitracker.com/details/1F609",
         "desc-link": "https://emojipedia.org/winking-face/",
-        "emoji": "😉"
+        "emoji": "\ud83d\ude09",
+        "imported": false
     },
     "1F648": {
         "name": "SEE-NO-EVIL MONKEY",
         "track-link": "https://emojitracker.com/details/1F648",
         "desc-link": "https://emojipedia.org/see-no-evil-monkey/",
-        "emoji": "🙈"
+        "emoji": "\ud83d\ude48",
+        "imported": false
     },
     "1F605": {
         "name": "SMILING FACE WITH OPEN MOUTH AND COLD SWEAT",
         "track-link": "https://emojitracker.com/details/1F605",
         "desc-link": "https://emojipedia.org/grinning-face-with-sweat/",
-        "emoji": "😅"
+        "emoji": "\ud83d\ude05",
+        "imported": false
     },
     "1F614": {
         "name": "PENSIVE FACE",
         "track-link": "https://emojitracker.com/details/1F614",
         "desc-link": "https://emojipedia.org/pensive-face/",
-        "emoji": "😔"
+        "emoji": "\ud83d\ude14",
+        "imported": false
     },
     "1F64F": {
         "name": "PERSON WITH FOLDED HANDS",
         "track-link": "https://emojitracker.com/details/1F64F",
         "desc-link": "https://emojipedia.org/folded-hands/",
-        "emoji": "🙏"
+        "emoji": "\ud83d\ude4f",
+        "imported": false
     },
     "1F61C": {
         "name": "FACE WITH STUCK-OUT TONGUE AND WINKING EYE",
         "track-link": "https://emojitracker.com/details/1F61C",
         "desc-link": "https://emojipedia.org/winking-face-with-tongue/",
-        "emoji": "😜"
+        "emoji": "\ud83d\ude1c",
+        "imported": false,
+        "total-tweets": 1000,
+        "clean-tweets": 308
     },
     "1F60F": {
         "name": "SMIRKING FACE",
         "track-link": "https://emojitracker.com/details/1F60F",
         "desc-link": "https://emojipedia.org/smirking-face/",
-        "emoji": "😏"
+        "emoji": "\ud83d\ude0f",
+        "imported": false
     },
     "1F44F": {
         "name": "CLAPPING HANDS SIGN",
         "track-link": "https://emojitracker.com/details/1F44F",
         "desc-link": "https://emojipedia.org/clapping-hands/",
-        "emoji": "👏"
+        "emoji": "\ud83d\udc4f",
+        "imported": false
     },
     "1F629": {
         "name": "WEARY FACE",
         "track-link": "https://emojitracker.com/details/1F629",
         "desc-link": "https://emojipedia.org/weary-face/",
-        "emoji": "😩"
+        "emoji": "\ud83d\ude29",
+        "imported": false
     },
     "1F633": {
         "name": "FLUSHED FACE",
         "track-link": "https://emojitracker.com/details/1F633",
         "desc-link": "https://emojipedia.org/flushed-face/",
-        "emoji": "😳"
+        "emoji": "\ud83d\ude33",
+        "imported": false
     },
     "1F44C": {
         "name": "OK HAND SIGN",
         "track-link": "https://emojitracker.com/details/1F44C",
         "desc-link": "https://emojipedia.org/ok-hand/",
-        "emoji": "👌"
+        "emoji": "\ud83d\udc4c",
+        "imported": false
     },
     "1F60B": {
         "name": "FACE SAVOURING DELICIOUS FOOD",
         "track-link": "https://emojitracker.com/details/1F60B",
         "desc-link": "https://emojipedia.org/face-savoring-food/",
-        "emoji": "😋"
+        "emoji": "\ud83d\ude0b",
+        "imported": false
     },
     "1F612": {
         "name": "UNAMUSED FACE",
         "track-link": "https://emojitracker.com/details/1F612",
         "desc-link": "https://emojipedia.org/unamused-face/",
-        "emoji": "😒"
+        "emoji": "\ud83d\ude12",
+        "imported": false
     },
     "1F60C": {
         "name": "RELIEVED FACE",
         "track-link": "https://emojitracker.com/details/1F60C",
         "desc-link": "https://emojipedia.org/relieved-face/",
-        "emoji": "😌"
+        "emoji": "\ud83d\ude0c",
+        "imported": false
     },
     "1F64E": {
         "name": "PERSON WITH POUTING FACE",
         "track-link": "https://emojitracker.com/details/1F64E",
         "desc-link": "https://emojipedia.org/pouting-face/",
-        "emoji": "😡"
+        "emoji": "\ud83d\ude21",
+        "imported": false
     },
     "1F631": {
         "name": "FACE SCREAMING IN FEAR",
         "track-link": "https://emojitracker.com/details/1F631",
         "desc-link": "https://emojipedia.org/face-screaming-in-fear/",
-        "emoji": "😱"
+        "emoji": "\ud83d\ude31",
+        "imported": false
     },
     "1F389": {
         "name": "PARTY POPPER",
         "track-link": "https://emojitracker.com/details/1F389",
         "desc-link": "https://emojipedia.org/party-popper/",
-        "emoji": "🎉"
+        "emoji": "\ud83c\udf89",
+        "imported": false
     },
     "1F525": {
         "name": "FIRE",
         "track-link": "https://emojitracker.com/details/1F525",
         "desc-link": "https://emojipedia.org/fire/",
-        "emoji": "🔥"
+        "emoji": "\ud83d\udd25",
+        "imported": false
     },
     "1F60E": {
         "name": "SMILING FACE WITH SUNGLASSES",
         "track-link": "https://emojitracker.com/details/1F60E",
         "desc-link": "https://emojipedia.org/smiling-face-with-sunglasses/",
-        "emoji": "😎"
+        "emoji": "\ud83d\ude0e",
+        "imported": false
     },
     "1F622": {
         "name": "CRYING FACE",
         "track-link": "https://emojitracker.com/details/1F622",
         "desc-link": "https://emojipedia.org/crying-face/",
-        "emoji": "😢"
+        "emoji": "\ud83d\ude22",
+        "imported": false
     },
     "1F607": {
         "name": "SMILING FACE WITH HALO",
         "track-link": "https://emojitracker.com/details/1F607",
         "desc-link": "https://emojipedia.org/smiling-face-with-halo/",
-        "emoji": "😇"
+        "emoji": "\ud83d\ude07",
+        "imported": false
     },
     "1F608": {
         "name": "SMILING FACE WITH HORNS",
         "track-link": "https://emojitracker.com/details/1F608",
         "desc-link": "https://emojipedia.org/smiling-face-with-horns/",
-        "emoji": "😈"
+        "emoji": "\ud83d\ude08",
+        "imported": false
     },
     "1F445": {
         "name": "TONGUE",
         "track-link": "https://emojitracker.com/details/1F445",
         "desc-link": "https://emojipedia.org/tongue/",
-        "emoji": "👅"
+        "emoji": "\ud83d\udc45",
+        "imported": false
     },
     "270C": {
         "name": "VICTORY HAND",
         "track-link": "https://emojitracker.com/details/270C",
         "desc-link": "https://emojipedia.org/victory-hand/",
-        "emoji": "✌️"
+        "emoji": "\u270c\ufe0f",
+        "imported": false
     },
     "1F62C": {
         "name": "GRIMACING FACE",
         "track-link": "https://emojitracker.com/details/1F62C",
         "desc-link": "https://emojipedia.org/grimacing-face/",
-        "emoji": "😬"
+        "emoji": "\ud83d\ude2c",
+        "imported": false
     },
     "1F44E": {
         "name": "THUMBS DOWN SIGN",
         "track-link": "https://emojitracker.com/details/1F44E",
         "desc-link": "https://emojipedia.org/thumbs-down/",
-        "emoji": "👎"
+        "emoji": "\ud83d\udc4e",
+        "imported": false
     },
     "1F351": {
         "name": "PEACH",
         "track-link": "https://emojitracker.com/details/1F351",
         "desc-link": "https://emojipedia.org/peach/",
-        "emoji": "🍑"
+        "emoji": "\ud83c\udf51",
+        "imported": false
     },
     "1F620": {
         "name": "ANGRY FACE",
         "track-link": "https://emojitracker.com/details/1F620",
         "desc-link": "https://emojipedia.org/angry-face/",
-        "emoji": "😠"
+        "emoji": "\ud83d\ude20",
+        "imported": false
     }
 }
