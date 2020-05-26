@@ -4,49 +4,70 @@
         "track-link": "https://emojitracker.com/details/1F60D",
         "desc-link": "https://emojipedia.org/smiling-face-with-heart-eyes/",
         "emoji": "\ud83d\ude0d",
-        "imported": false
+        "imported": true,
+        "total-tweets": 102000,
+        "sanitized-tweets": 21497,
+        "clean-tweets": 10297,
     },
     "1F602": {
         "name": "FACE WITH TEARS OF JOY",
         "track-link": "https://emojitracker.com/details/1F602",
         "desc-link": "https://emojipedia.org/face-with-tears-of-joy/",
         "emoji": "\ud83d\ude02",
-        "imported": false
+        "imported": true,
+        "total-tweets": 182000,
+        "sanitized-tweets": 62085,
+        "clean-tweets": 52197,
     },
     "2764": {
         "name": "HEAVY BLACK HEART",
         "track-link": "https://emojitracker.com/details/2764",
         "desc-link": "https://emojipedia.org/red-heart/",
         "emoji": "\u2764\ufe0f",
-        "imported": false
+        "imported": true,
+        "total-tweets": 139000,
+        "sanitized-tweets": 27646,
+        "clean-tweets": 85403
     },
     "1F618": {
         "name": "FACE THROWING A KISS",
         "track-link": "https://emojitracker.com/details/1F618",
         "desc-link": "https://emojipedia.org/red-heart/",
         "emoji": "\ud83d\ude18",
-        "imported": false
+        "imported": true,
+        "total-tweets": 13050,
+        "sanitized-tweets": 2949,
+        "clean-tweets": 87434
     },
     "1F62D": {
         "name": "LOUDLY CRYING FACE",
         "track-link": "https://emojitracker.com/details/1F62D",
         "desc-link": "https://emojipedia.org/loudly-crying-face/",
         "emoji": "\ud83d\ude2d",
-        "imported": false
+        "imported": true,
+        "total-tweets": 60000,
+        "sanitized-tweets": 23138,
+        "clean-tweets": 106838
     },
     "1F44D": {
         "name": "THUMBS UP SIGN",
         "track-link": "https://emojitracker.com/details/1F44D",
         "desc-link": "https://emojipedia.org/thumbs-up/",
         "emoji": "\ud83d\udc4d",
-        "imported": false
+        "imported": true,
+        "total-tweets": 27235,
+        "sanitized-tweets": 8327,
+        "clean-tweets": 113002
     },
     "1F60A": {
         "name": "SMILING FACE WITH SMILING EYES",
         "track-link": "https://emojitracker.com/details/1F60A",
         "desc-link": "https://emojipedia.org/smiling-face-with-smiling-eyes/",
         "emoji": "\ud83d\ude0a",
-        "imported": false
+        "imported": true,
+        "total-tweets": 19800,
+        "sanitized-tweets": 5883,
+        "clean-tweets": 117115
     },
     "1F609": {
         "name": "WINKING FACE",
@@ -67,14 +88,20 @@
         "track-link": "https://emojitracker.com/details/1F605",
         "desc-link": "https://emojipedia.org/grinning-face-with-sweat/",
         "emoji": "\ud83d\ude05",
-        "imported": false
+        "imported": true,
+        "total-tweets": 57289,
+        "sanitized-tweets": 16527,
+        "clean-tweets": 131171
     },
     "1F614": {
         "name": "PENSIVE FACE",
         "track-link": "https://emojitracker.com/details/1F614",
         "desc-link": "https://emojipedia.org/pensive-face/",
         "emoji": "\ud83d\ude14",
-        "imported": false
+        "imported": true,
+        "total-tweets": 121200,
+        "sanitized-tweets": 35667,
+        "clean-tweets": 160536
     },
     "1F64F": {
         "name": "PERSON WITH FOLDED HANDS",
@@ -88,9 +115,10 @@
         "track-link": "https://emojitracker.com/details/1F61C",
         "desc-link": "https://emojipedia.org/winking-face-with-tongue/",
         "emoji": "\ud83d\ude1c",
-        "imported": false,
-        "total-tweets": 1000,
-        "clean-tweets": 308
+        "imported": true,
+        "total-tweets": 15178,
+        "sanitized-tweets": 4224,
+        "clean-tweets": 163944
     },
     "1F60F": {
         "name": "SMIRKING FACE",
@@ -139,7 +167,10 @@
         "track-link": "https://emojitracker.com/details/1F612",
         "desc-link": "https://emojipedia.org/unamused-face/",
         "emoji": "\ud83d\ude12",
-        "imported": false
+        "imported": true,
+        "total-tweets": 6000,
+        "sanitized-tweets": 2065,
+        "clean-tweets": 165668
     },
     "1F60C": {
         "name": "RELIEVED FACE",

@@ -173,12 +173,11 @@ config
     // --- Added by Raphael
     allTweets.push(JSON.parse(event.data).text);
     l = allTweets.length;
-    
+    forceDownload = false;
     if (forceDownload || l % downloadIter == 0) {
       if (!forceDownload) {
         console.log("Hit " + downloadIter + ". Downloading tweets and resetting counter.");
       }
-      forceDownload = false;
       hrefSplit = window.location.href.split("/");
       emojiName = hrefSplit[hrefSplit.length - 1];
       console.save(allTweets, emojiName.toString() + "_" + downloadedCount + ".json");
