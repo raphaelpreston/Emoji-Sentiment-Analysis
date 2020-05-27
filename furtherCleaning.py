@@ -31,7 +31,6 @@ cleanedCodes = [code for code in importedCodes if ourEmojiData[code]['cleaned']]
 unCleanedCodes = [code for code in importedCodes if not ourEmojiData[code]['cleaned']]
 
 # cleanedTweets = []
-allTweets = []
 codesCleaned = 0
 lengths = []
 # skip cleanedCodes
@@ -49,7 +48,7 @@ for code in unCleanedCodes:
     fileName = "{}sanitized/{}.json".format(DIR_PREFIX, code)
     try:
         with open(fileName, "r") as f:
-            allTweets.extend(json.load(f))
+            allTweets = json.load(f)
     except Exception as e:
         print("\nFailed to read JSON from {}".format(fileName))
     

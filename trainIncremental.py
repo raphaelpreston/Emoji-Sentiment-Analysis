@@ -1,3 +1,8 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+@author: raphaelpreston
+"""
 import watsonTools
 import json
 import sys
@@ -24,9 +29,9 @@ trainedCodes = [code for code in cleanedCodes if ourEmojiData[code].get('trained
 dontTrainCodes = [code for code in importedCodes if ourEmojiData[code].get('dont-train', False)]
 codesToTrain = [code for code in cleanedCodes if code not in dontTrainCodes]
 
-# --- for testing
-codesToTrain = codesToTrain[:4]
-# ---
+# # --- for testing
+# codesToTrain = codesToTrain[:4]
+# # ---
 
 # load in all the clean tweets for each code
 cleanTweets = {code: [] for code in ourEmojiCodes}
@@ -47,8 +52,9 @@ for code in trainedCodes:
         ourEmojiData[code]['trained-tweets'] = 0
 
 
-totalToTrain = 15 # the total number of tweets to train this round
-print("Training {} tweets for {} untrained codes. That's about {} tweets per code:".format(
+totalToTrain = float("inf") # the total number of tweets to train this round
+
+print("Training {} tweets for {} codes. That's about {} tweets per code:".format(
     totalToTrain, len(codesToTrain), totalToTrain // len(codesToTrain)
 ))
 
@@ -56,27 +62,19 @@ print("Training {} tweets for {} untrained codes. That's about {} tweets per cod
 numNewTweetsTrained = {code: 0 for code in codesToTrain} # num of tweets trained per originally untrained code
 tweetsTrainedThisRound = 0
 currCodeIndex = 0
+uniqueCalls = 0
 while tweetsTrainedThisRound < totalToTrain:
 
     code = codesToTrain[currCodeIndex]
 
-    # print progress
-    replaceLineWith(", ".join([
-        "{} ({}/{}/{})".format(
-            c,
-            numNewTweetsTrained[c], # tweets trained this round
-            len(tweetsTrained[c]), # total tweets trained for this code
-            ourEmojiData[c]['clean-tweets'] # num clean tweets available to train
-        ) for c in codesToTrain
-    ]))
-
-    numTweetsTrained = numNewTweetsTrained[code]
     totalTweetsTrained = len(tweetsTrained[code])
-    if numTweetsTrained < ourEmojiData[code]['clean-tweets']: # there are more tweets to train
+    if totalTweetsTrained < ourEmojiData[code]['clean-tweets']: # there are more tweets to train
         tweet = cleanTweets[code][totalTweetsTrained]
 
         # train and save results of training for next tweet
-        watsonTools.scores_from_tweets_to_df([tweet], code, "training_results.csv")
+        existed = watsonTools.scores_from_tweets_to_df([tweet], code, "training_results.csv")
+        if not existed:
+            uniqueCalls += 1
 
         # update data
         if 'trained-tweets' in ourEmojiData[code]:
@@ -95,7 +93,12 @@ while tweetsTrainedThisRound < totalToTrain:
         
         numNewTweetsTrained[code] += 1
         tweetsTrainedThisRound += 1
+    else:
+        print("Reached limit for {}".format(code))
 
+    # print progress
+    replaceLineWith("{}/{}, {} unique".format(tweetsTrainedThisRound, totalToTrain, uniqueCalls))
+    
     # wrap to next code
     currCodeIndex = (currCodeIndex + 1 ) % len(codesToTrain)
 

@@ -111,12 +111,26 @@ def scores_from_tweets_to_df(tweets, label, pathToCSV=None):
             df_scores = pd.DataFrame()
     
     for t in tweets:
-        response = tweet_score(t)
-        # response = {'document_tone': {'tones': [{'score': 0.546844, 'tone_id': 'anger', 'tone_name': 'Joy'}]}}
+        # check to see if we've already analyzed this tweet
+        if 'tweet' in df_scores and t in df_scores['tweet'].values:
+            existed = True
+            ind = df_scores[df_scores['tweet'] == t].index[0]
+            row = df_scores.iloc[ind]
+            tones = ['joy','confident','tentative','sadness','analytical','anger','fear']
+            response = {
+                'document_tone': {
+                    'tones': [{'score': row[tone], 'tone_id': tone} for tone in tones if row[tone] != 0]
+                }
+            }
+        else: # otherwise, query watson
+            response = tweet_score(t)
+            existed = False
         if 'document_tone' in response:
             if 'tones' in response['document_tone']:
                 if 'label' not in df_scores.columns:
                     df_scores.loc[:,'label'] = pd.Series(0, index=df_scores.index)
+                if 'tweet' not in df_scores.columns:
+                    df_scores.loc[:,'tweet'] = pd.Series(0, index=df_scores.index)
                 df_scores = df_scores.append(pd.Series(0, index=df_scores.columns), ignore_index=True)
                 for s in list(response['document_tone']['tones']):
 
@@ -124,25 +138,23 @@ def scores_from_tweets_to_df(tweets, label, pathToCSV=None):
                         df_scores.loc[df_scores.index[-1],s['tone_id']] = s['score']
                     
                     else:
-                        print("before")
-                        print(df_scores)
                         df_scores.loc[:,s['tone_id']] = pd.Series(0, index=df_scores.index)
-                        print("after")
-                        print(df_scores)
                         df_scores.loc[df_scores.index[-1],s['tone_id']] = s['score']
                     
                 df_scores.loc[df_scores.index[-1], 'label'] = label
+                df_scores.loc[df_scores.index[-1], 'tweet'] = t
     
     # save the file to the same path
-    if pathToCSV is None:
-        return df_scores
-    else:
-        return df_scores.to_csv(pathToCSV)
+    if pathToCSV is not None:
+        df_scores.to_csv(pathToCSV)
+    return existed # to keep track of how many calls were actually made
 
 
 if __name__ == "__main__": # don't run if just imported
+    # sample response: {'document_tone': {'tones': [{'score': 0.84639, 'tone_id': 'tentative', 'tone_name': 'Tentative'}]}}
+    tweet = "It has a character that is similar to Jet from Cowboy Bebop that might also be voiced by the same actor. A little bit of comfort"
 
-    scores_from_tweets_to_df(['hey there'], 'code1', "training_results.csv")
+    scores_from_tweets_to_df([tweet], 'code1', "training_results.csv")
 
 
     # ## Examples
