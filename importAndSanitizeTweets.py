@@ -1,3 +1,9 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+@author: raphaelpreston
+"""
+
 # URL regex credit: 
 # https://stackoverflow.com/questions/6038061/regular-expression-to-find-urls-within-a-string
 
@@ -43,26 +49,28 @@ importedCodes = [code for code in ourEmojiCodes if ourEmojiData[code]['imported'
 # import everything that hasn't been set as imported
 codesImported = 0
 for code in importedCodes:
-    print('Already imported and cleaned "{}"'.format(importedCodes))
+    print('Already imported and sanitized "{}"'.format(code))
 for code in unImportedCodes:
     # print progress
     codesImported += 1
-    print("Analyzing code {}/{} ({})".format(codesImported, len(ourEmojiCodes), code))
+    print("Analyzing code {}/{}/{} ({})".format(codesImported, len(unImportedCodes), len(ourEmojiCodes), code))
 
     # import the tweets from all downloaded files
     myDir = os.listdir(os.fsencode("{}/raw/{}".format(DIR_PREFIX, code)))
     filesImported = 0
     allTweets = []
     for file in myDir: # read tweets into list
-        fileName = "{}raw/{}/{}".format(DIR_PREFIX, code, os.fsdecode(file))
-        try:
-            with open(fileName, "r") as f:
-                myTweets = json.load(f)
-                allTweets.extend(myTweets)
-                filesImported += 1
-            replaceLineWith("  Importing {}/{}".format(filesImported, len(myDir)))
-        except Exception as e:
-            print("\nFailed to read JSON from {}".format(fileName))
+        fileName = os.fsdecode(file)
+        if fileName != "desktop.ini": # stupid hidden files UGH
+            filePath = "{}raw/{}/{}".format(DIR_PREFIX, code, fileName)
+            try:
+                with open(filePath, "r") as f:
+                    myTweets = json.load(f)
+                    allTweets.extend(myTweets)
+                    filesImported += 1
+                replaceLineWith("  Importing {}/{}".format(filesImported, len(myDir)))
+            except Exception as e:
+                print("\nFailed to read JSON from {}".format(filePath))
 
     if filesImported > 0:
         print()
@@ -70,7 +78,7 @@ for code in unImportedCodes:
         cleanedTweets = []
         cleaned = 0
         for tweet in allTweets:
-            cleaned += 1
+            cleaned += 1 
 
             # print progress
             replaceLineWith('  Sanitizing {}/{}/{}'.format(len(cleanedTweets), cleaned, len(allTweets)))
@@ -78,7 +86,7 @@ for code in unImportedCodes:
             newTweet = urlRe.sub("", tweet) # remove all links
             newTweet = mentionRe.sub(" ", newTweet)  # remove mentions
             newTweet = hashtagRe.sub(" ", newTweet)  # remove hashtags
-            newTweet = ampRe.sub("&", newTweet) # replace HTML ampersands
+            newTweet = ampRe.sub(" and ", newTweet) # replace HTML ampersands, add extra spaces
             newTweet = gtRe.sub(">", newTweet) # replace HTML greater than
             newTweet = ltRe.sub("<", newTweet) # replace HTML less than
             newTweet = nbspRe.sub(" ", newTweet) # replace HTML space
@@ -89,12 +97,16 @@ for code in unImportedCodes:
             newTweet = spPuncRe.sub(r"\1", newTweet) # remove spaces before ending punctuation
             newTweet = multSpaceRe.sub(" ", newTweet) # remove multiple whitespaces
 
+            if newTweet and not newTweet.isspace():
+                cleanedTweets.append(newTweet.strip())
+
         print()
 
         # update json data for this code
         ourEmojiData[code]['total-tweets'] = len(allTweets)
         ourEmojiData[code]['sanitized-tweets'] = len(cleanedTweets)
         ourEmojiData[code]['imported'] = True
+        ourEmojiData[code]['cleaned'] = False
 
         # write all tweets for this code to new file
         with open("{}/sanitized/{}.json".format(DIR_PREFIX, code), "w+") as f:

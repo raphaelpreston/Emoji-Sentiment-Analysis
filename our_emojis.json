@@ -5,9 +5,13 @@
         "desc-link": "https://emojipedia.org/smiling-face-with-heart-eyes/",
         "emoji": "\ud83d\ude0d",
         "imported": true,
+        "cleaned": true,
+        "dont-train": false,
         "total-tweets": 102000,
-        "sanitized-tweets": 21497,
-        "clean-tweets": 10297,
+        "sanitized-tweets": 77060,
+        "clean-tweets": 3577,
+        "clean-tweet-median-length": 8,
+        "trained-tweets": 39
     },
     "1F602": {
         "name": "FACE WITH TEARS OF JOY",
@@ -15,9 +19,13 @@
         "desc-link": "https://emojipedia.org/face-with-tears-of-joy/",
         "emoji": "\ud83d\ude02",
         "imported": true,
+        "cleaned": true,
+        "dont-train": false,
         "total-tweets": 182000,
-        "sanitized-tweets": 62085,
-        "clean-tweets": 52197,
+        "sanitized-tweets": 133562,
+        "clean-tweets": 17255,
+        "clean-tweet-median-length": 9.0,
+        "trained-tweets": 38
     },
     "2764": {
         "name": "HEAVY BLACK HEART",
@@ -25,9 +33,13 @@
         "desc-link": "https://emojipedia.org/red-heart/",
         "emoji": "\u2764\ufe0f",
         "imported": true,
+        "cleaned": true,
+        "dont-train": false,
         "total-tweets": 139000,
-        "sanitized-tweets": 27646,
-        "clean-tweets": 85403
+        "sanitized-tweets": 88893,
+        "clean-tweets": 21399,
+        "clean-tweet-median-length": 9.0,
+        "trained-tweets": 36
     },
     "1F618": {
         "name": "FACE THROWING A KISS",
@@ -35,9 +47,13 @@
         "desc-link": "https://emojipedia.org/red-heart/",
         "emoji": "\ud83d\ude18",
         "imported": true,
+        "cleaned": true,
+        "dont-train": false,
         "total-tweets": 13050,
-        "sanitized-tweets": 2949,
-        "clean-tweets": 87434
+        "sanitized-tweets": 9910,
+        "clean-tweets": 21835,
+        "clean-tweet-median-length": 9.0,
+        "trained-tweets": 28
     },
     "1F62D": {
         "name": "LOUDLY CRYING FACE",
@@ -45,9 +61,12 @@
         "desc-link": "https://emojipedia.org/loudly-crying-face/",
         "emoji": "\ud83d\ude2d",
         "imported": true,
+        "cleaned": true,
+        "dont-train": false,
         "total-tweets": 60000,
-        "sanitized-tweets": 23138,
-        "clean-tweets": 106838
+        "sanitized-tweets": 51360,
+        "clean-tweets": 26645,
+        "clean-tweet-median-length": 9
     },
     "1F44D": {
         "name": "THUMBS UP SIGN",
@@ -55,9 +74,12 @@
         "desc-link": "https://emojipedia.org/thumbs-up/",
         "emoji": "\ud83d\udc4d",
         "imported": true,
+        "cleaned": true,
+        "dont-train": false,
         "total-tweets": 27235,
-        "sanitized-tweets": 8327,
-        "clean-tweets": 113002
+        "sanitized-tweets": 18227,
+        "clean-tweets": 28371,
+        "clean-tweet-median-length": 9
     },
     "1F60A": {
         "name": "SMILING FACE WITH SMILING EYES",
@@ -65,16 +87,25 @@
         "desc-link": "https://emojipedia.org/smiling-face-with-smiling-eyes/",
         "emoji": "\ud83d\ude0a",
         "imported": true,
+        "cleaned": true,
+        "dont-train": false,
         "total-tweets": 19800,
-        "sanitized-tweets": 5883,
-        "clean-tweets": 117115
+        "sanitized-tweets": 16145,
+        "clean-tweets": 29268,
+        "clean-tweet-median-length": 9
     },
     "1F609": {
         "name": "WINKING FACE",
         "track-link": "https://emojitracker.com/details/1F609",
         "desc-link": "https://emojipedia.org/winking-face/",
         "emoji": "\ud83d\ude09",
-        "imported": false
+        "imported": true,
+        "cleaned": true,
+        "dont-train": false,
+        "total-tweets": 20700,
+        "sanitized-tweets": 16392,
+        "clean-tweets": 30714,
+        "clean-tweet-median-length": 9.0
     },
     "1F648": {
         "name": "SEE-NO-EVIL MONKEY",
@@ -89,9 +120,12 @@
         "desc-link": "https://emojipedia.org/grinning-face-with-sweat/",
         "emoji": "\ud83d\ude05",
         "imported": true,
+        "cleaned": true,
+        "dont-train": false,
         "total-tweets": 57289,
-        "sanitized-tweets": 16527,
-        "clean-tweets": 131171
+        "sanitized-tweets": 46640,
+        "clean-tweets": 34330,
+        "clean-tweet-median-length": 9.0
     },
     "1F614": {
         "name": "PENSIVE FACE",
@@ -99,16 +133,25 @@
         "desc-link": "https://emojipedia.org/pensive-face/",
         "emoji": "\ud83d\ude14",
         "imported": true,
+        "cleaned": true,
+        "dont-train": false,
         "total-tweets": 121200,
-        "sanitized-tweets": 35667,
-        "clean-tweets": 160536
+        "sanitized-tweets": 102265,
+        "clean-tweets": 42834,
+        "clean-tweet-median-length": 9
     },
     "1F64F": {
         "name": "PERSON WITH FOLDED HANDS",
         "track-link": "https://emojitracker.com/details/1F64F",
         "desc-link": "https://emojipedia.org/folded-hands/",
         "emoji": "\ud83d\ude4f",
-        "imported": false
+        "imported": true,
+        "cleaned": true,
+        "dont-train": false,
+        "total-tweets": 39300,
+        "sanitized-tweets": 26605,
+        "clean-tweets": 44437,
+        "clean-tweet-median-length": 9.0
     },
     "1F61C": {
         "name": "FACE WITH STUCK-OUT TONGUE AND WINKING EYE",
@@ -116,9 +159,12 @@
         "desc-link": "https://emojipedia.org/winking-face-with-tongue/",
         "emoji": "\ud83d\ude1c",
         "imported": true,
+        "cleaned": true,
+        "dont-train": false,
         "total-tweets": 15178,
-        "sanitized-tweets": 4224,
-        "clean-tweets": 163944
+        "sanitized-tweets": 11704,
+        "clean-tweets": 45293,
+        "clean-tweet-median-length": 9
     },
     "1F60F": {
         "name": "SMIRKING FACE",
@@ -132,7 +178,13 @@
         "track-link": "https://emojitracker.com/details/1F44F",
         "desc-link": "https://emojipedia.org/clapping-hands/",
         "emoji": "\ud83d\udc4f",
-        "imported": false
+        "imported": true,
+        "cleaned": true,
+        "dont-train": false,
+        "total-tweets": 5087,
+        "sanitized-tweets": 3681,
+        "clean-tweets": 345,
+        "clean-tweet-median-length": 9.0
     },
     "1F629": {
         "name": "WEARY FACE",
@@ -153,14 +205,26 @@
         "track-link": "https://emojitracker.com/details/1F44C",
         "desc-link": "https://emojipedia.org/ok-hand/",
         "emoji": "\ud83d\udc4c",
-        "imported": false
+        "imported": true,
+        "cleaned": true,
+        "dont-train": false,
+        "total-tweets": 21810,
+        "sanitized-tweets": 15767,
+        "clean-tweets": 46099,
+        "clean-tweet-median-length": 9.0
     },
     "1F60B": {
         "name": "FACE SAVOURING DELICIOUS FOOD",
         "track-link": "https://emojitracker.com/details/1F60B",
         "desc-link": "https://emojipedia.org/face-savoring-food/",
         "emoji": "\ud83d\ude0b",
-        "imported": false
+        "imported": true,
+        "cleaned": true,
+        "dont-train": false,
+        "total-tweets": 17870,
+        "sanitized-tweets": 14729,
+        "clean-tweets": 47134,
+        "clean-tweet-median-length": 9
     },
     "1F612": {
         "name": "UNAMUSED FACE",
@@ -168,9 +232,12 @@
         "desc-link": "https://emojipedia.org/unamused-face/",
         "emoji": "\ud83d\ude12",
         "imported": true,
+        "cleaned": true,
+        "dont-train": false,
         "total-tweets": 6000,
-        "sanitized-tweets": 2065,
-        "clean-tweets": 165668
+        "sanitized-tweets": 4700,
+        "clean-tweets": 47607,
+        "clean-tweet-median-length": 9
     },
     "1F60C": {
         "name": "RELIEVED FACE",
@@ -179,47 +246,57 @@
         "emoji": "\ud83d\ude0c",
         "imported": false
     },
-    "1F64E": {
-        "name": "PERSON WITH POUTING FACE",
-        "track-link": "https://emojitracker.com/details/1F64E",
-        "desc-link": "https://emojipedia.org/pouting-face/",
-        "emoji": "\ud83d\ude21",
-        "imported": false
-    },
     "1F631": {
         "name": "FACE SCREAMING IN FEAR",
         "track-link": "https://emojitracker.com/details/1F631",
         "desc-link": "https://emojipedia.org/face-screaming-in-fear/",
         "emoji": "\ud83d\ude31",
-        "imported": false
-    },
-    "1F389": {
-        "name": "PARTY POPPER",
-        "track-link": "https://emojitracker.com/details/1F389",
-        "desc-link": "https://emojipedia.org/party-popper/",
-        "emoji": "\ud83c\udf89",
-        "imported": false
+        "imported": true,
+        "cleaned": true,
+        "dont-train": false,
+        "total-tweets": 22200,
+        "sanitized-tweets": 17710,
+        "clean-tweets": 1221,
+        "clean-tweet-median-length": 9
     },
     "1F525": {
         "name": "FIRE",
         "track-link": "https://emojitracker.com/details/1F525",
         "desc-link": "https://emojipedia.org/fire/",
         "emoji": "\ud83d\udd25",
-        "imported": false
+        "imported": true,
+        "cleaned": true,
+        "dont-train": false,
+        "total-tweets": 36900,
+        "sanitized-tweets": 31365,
+        "clean-tweets": 49273,
+        "clean-tweet-median-length": 9.0
     },
     "1F60E": {
         "name": "SMILING FACE WITH SUNGLASSES",
         "track-link": "https://emojitracker.com/details/1F60E",
         "desc-link": "https://emojipedia.org/smiling-face-with-sunglasses/",
         "emoji": "\ud83d\ude0e",
-        "imported": false
+        "imported": true,
+        "cleaned": true,
+        "dont-train": false,
+        "total-tweets": 61517,
+        "sanitized-tweets": 49459,
+        "clean-tweets": 4447,
+        "clean-tweet-median-length": 9
     },
     "1F622": {
         "name": "CRYING FACE",
         "track-link": "https://emojitracker.com/details/1F622",
         "desc-link": "https://emojipedia.org/crying-face/",
         "emoji": "\ud83d\ude22",
-        "imported": false
+        "imported": true,
+        "cleaned": true,
+        "dont-train": false,
+        "total-tweets": 21900,
+        "sanitized-tweets": 16119,
+        "clean-tweets": 50749,
+        "clean-tweet-median-length": 9
     },
     "1F607": {
         "name": "SMILING FACE WITH HALO",
@@ -233,13 +310,6 @@
         "track-link": "https://emojitracker.com/details/1F608",
         "desc-link": "https://emojipedia.org/smiling-face-with-horns/",
         "emoji": "\ud83d\ude08",
-        "imported": false
-    },
-    "1F445": {
-        "name": "TONGUE",
-        "track-link": "https://emojitracker.com/details/1F445",
-        "desc-link": "https://emojipedia.org/tongue/",
-        "emoji": "\ud83d\udc45",
         "imported": false
     },
     "270C": {
@@ -275,6 +345,12 @@
         "track-link": "https://emojitracker.com/details/1F620",
         "desc-link": "https://emojipedia.org/angry-face/",
         "emoji": "\ud83d\ude20",
-        "imported": false
+        "imported": true,
+        "cleaned": true,
+        "dont-train": false,
+        "total-tweets": 15365,
+        "sanitized-tweets": 13247,
+        "clean-tweets": 5034,
+        "clean-tweet-median-length": 9
     }
 }

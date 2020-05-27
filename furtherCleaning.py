@@ -1,3 +1,9 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+@author: raphaelpreston
+"""
+
 import json
 import sys
 import enchant
@@ -21,16 +27,23 @@ with open(JSON_FNAME, "r") as f:
 
 ourEmojiCodes = [code for code in ourEmojiData] # all our emoji codes
 importedCodes = [code for code in ourEmojiCodes if ourEmojiData[code]['imported']]
+cleanedCodes = [code for code in importedCodes if ourEmojiData[code]['cleaned']]
+unCleanedCodes = [code for code in importedCodes if not ourEmojiData[code]['cleaned']]
 
 # cleanedTweets = []
 allTweets = []
 codesCleaned = 0
 lengths = []
-# clean everything, even those already cleaned
-for code in importedCodes:
+# skip cleanedCodes
+i = 0
+for code in cleanedCodes:
+    i += 1
+    print('Already cleaned "{} ({}/{})"'.format(code, i, len(cleanedCodes)))
+# clean imported tweets that haven't been cleaned
+for code in unCleanedCodes:
     codesCleaned += 1
 
-    print("Cleaning code {}/{}/{} ({})".format(codesCleaned, len(importedCodes), len(ourEmojiCodes), code))
+    print("Code {}/{}/{}/{} ({})".format(codesCleaned, len(unCleanedCodes), len(importedCodes), len(ourEmojiCodes), code))
 
     # import the tweets from the sanitized file
     fileName = "{}sanitized/{}.json".format(DIR_PREFIX, code)
@@ -47,16 +60,20 @@ for code in importedCodes:
         analyzed += 1
 
         # print progress
-        replaceLineWith('  Sanitizing {}/{}/{}'.format(len(cleanedTweets), analyzed, len(allTweets)))
+        replaceLineWith('  Cleaning {}/{}/{}'.format(len(cleanedTweets), analyzed, len(allTweets)))
 
         words = tweet.split(' ')
-        if len([w for w in words if ENGL_DICT.check(w)]) > 5: # at least 5 english words
-            cleanedTweets.add(tweet)
-            lengths.append(len(words))
+        if len(words) > 5: # at least 5 words
+            incoherentWords = len([w for w in words if not ENGL_DICT.check(w)])
+            if incoherentWords < 1: # no incoherent words
+                cleanedTweets.add(tweet)
+                lengths.append(len(words))
 
     print()
 
     # update json data for this code
+    ourEmojiData[code]['cleaned'] = True
+    ourEmojiData[code]['dont-train'] = False
     ourEmojiData[code]['clean-tweets'] = len(cleanedTweets)
     ourEmojiData[code]['clean-tweet-median-length'] =  median(lengths)
 
