@@ -11,7 +11,7 @@
         "dont-train": false,
         "clean-tweets": 3586,
         "clean-tweet-median-length": 8.0,
-        "trained-tweets": 526
+        "trained-tweets": 797
     },
     "1F602": {
         "name": "FACE WITH TEARS OF JOY",
@@ -25,7 +25,7 @@
         "dont-train": false,
         "clean-tweets": 13720,
         "clean-tweet-median-length": 9.0,
-        "trained-tweets": 526
+        "trained-tweets": 797
     },
     "2764": {
         "name": "HEAVY BLACK HEART",
@@ -39,7 +39,7 @@
         "dont-train": false,
         "clean-tweets": 4283,
         "clean-tweet-median-length": 9,
-        "trained-tweets": 526
+        "trained-tweets": 797
     },
     "1F618": {
         "name": "FACE THROWING A KISS",
@@ -50,7 +50,7 @@
         "total-tweets": 13050,
         "sanitized-tweets": 9910,
         "cleaned": true,
-        "dont-train": false,
+        "dont-train": true,
         "clean-tweets": 437,
         "clean-tweet-median-length": 9,
         "trained-tweets": 436
@@ -67,7 +67,7 @@
         "dont-train": false,
         "clean-tweets": 4825,
         "clean-tweet-median-length": 9,
-        "trained-tweets": 525
+        "trained-tweets": 795
     },
     "1F44D": {
         "name": "THUMBS UP SIGN",
@@ -81,7 +81,7 @@
         "dont-train": false,
         "clean-tweets": 1752,
         "clean-tweet-median-length": 9.0,
-        "trained-tweets": 525
+        "trained-tweets": 795
     },
     "1F60A": {
         "name": "SMILING FACE WITH SMILING EYES",
@@ -95,7 +95,7 @@
         "dont-train": false,
         "clean-tweets": 906,
         "clean-tweet-median-length": 9,
-        "trained-tweets": 525
+        "trained-tweets": 793
     },
     "1F609": {
         "name": "WINKING FACE",
@@ -109,14 +109,21 @@
         "dont-train": false,
         "clean-tweets": 1447,
         "clean-tweet-median-length": 9.0,
-        "trained-tweets": 525
+        "trained-tweets": 793
     },
     "1F648": {
         "name": "SEE-NO-EVIL MONKEY",
         "track-link": "https://emojitracker.com/details/1F648",
         "desc-link": "https://emojipedia.org/see-no-evil-monkey/",
         "emoji": "\ud83d\ude48",
-        "imported": false
+        "imported": true,
+        "total-tweets": 43500,
+        "sanitized-tweets": 35141,
+        "cleaned": true,
+        "dont-train": true,
+        "clean-tweets": 2256,
+        "clean-tweet-median-length": 9.0,
+        "trained-tweets": 2255
     },
     "1F605": {
         "name": "SMILING FACE WITH OPEN MOUTH AND COLD SWEAT",
@@ -130,7 +137,7 @@
         "dont-train": false,
         "clean-tweets": 3622,
         "clean-tweet-median-length": 9,
-        "trained-tweets": 523
+        "trained-tweets": 791
     },
     "1F614": {
         "name": "PENSIVE FACE",
@@ -144,7 +151,7 @@
         "dont-train": false,
         "clean-tweets": 8527,
         "clean-tweet-median-length": 9,
-        "trained-tweets": 523
+        "trained-tweets": 791
     },
     "1F64F": {
         "name": "PERSON WITH FOLDED HANDS",
@@ -158,7 +165,7 @@
         "dont-train": false,
         "clean-tweets": 1615,
         "clean-tweet-median-length": 9,
-        "trained-tweets": 523
+        "trained-tweets": 791
     },
     "1F61C": {
         "name": "FACE WITH STUCK-OUT TONGUE AND WINKING EYE",
@@ -172,7 +179,7 @@
         "dont-train": false,
         "clean-tweets": 862,
         "clean-tweet-median-length": 9,
-        "trained-tweets": 523
+        "trained-tweets": 791
     },
     "1F60F": {
         "name": "SMIRKING FACE",
@@ -186,7 +193,7 @@
         "dont-train": false,
         "clean-tweets": 2249,
         "clean-tweet-median-length": 9.0,
-        "trained-tweets": 523
+        "trained-tweets": 791
     },
     "1F44F": {
         "name": "CLAPPING HANDS SIGN",
@@ -197,7 +204,7 @@
         "total-tweets": 5087,
         "sanitized-tweets": 3681,
         "cleaned": true,
-        "dont-train": false,
+        "dont-train": true,
         "clean-tweets": 345,
         "clean-tweet-median-length": 9.0,
         "trained-tweets": 344
@@ -207,14 +214,28 @@
         "track-link": "https://emojitracker.com/details/1F629",
         "desc-link": "https://emojipedia.org/weary-face/",
         "emoji": "\ud83d\ude29",
-        "imported": false
+        "imported": true,
+        "total-tweets": 48600,
+        "sanitized-tweets": 44380,
+        "cleaned": true,
+        "dont-train": false,
+        "clean-tweets": 6300,
+        "clean-tweet-median-length": 9.0,
+        "trained-tweets": 697
     },
     "1F633": {
         "name": "FLUSHED FACE",
         "track-link": "https://emojitracker.com/details/1F633",
         "desc-link": "https://emojipedia.org/flushed-face/",
         "emoji": "\ud83d\ude33",
-        "imported": false
+        "imported": true,
+        "total-tweets": 55800,
+        "sanitized-tweets": 43463,
+        "cleaned": true,
+        "dont-train": false,
+        "clean-tweets": 3340,
+        "clean-tweet-median-length": 9.0,
+        "trained-tweets": 695
     },
     "1F44C": {
         "name": "OK HAND SIGN",
@@ -228,7 +249,7 @@
         "dont-train": false,
         "clean-tweets": 815,
         "clean-tweet-median-length": 9.0,
-        "trained-tweets": 522
+        "trained-tweets": 790
     },
     "1F60B": {
         "name": "FACE SAVOURING DELICIOUS FOOD",
@@ -242,7 +263,7 @@
         "dont-train": false,
         "clean-tweets": 1063,
         "clean-tweet-median-length": 9,
-        "trained-tweets": 522
+        "trained-tweets": 790
     },
     "1F612": {
         "name": "UNAMUSED FACE",
@@ -253,7 +274,7 @@
         "total-tweets": 6000,
         "sanitized-tweets": 4700,
         "cleaned": true,
-        "dont-train": false,
+        "dont-train": true,
         "clean-tweets": 478,
         "clean-tweet-median-length": 9,
         "trained-tweets": 477
@@ -263,7 +284,14 @@
         "track-link": "https://emojitracker.com/details/1F60C",
         "desc-link": "https://emojipedia.org/relieved-face/",
         "emoji": "\ud83d\ude0c",
-        "imported": false
+        "imported": true,
+        "total-tweets": 44400,
+        "sanitized-tweets": 38270,
+        "cleaned": true,
+        "dont-train": false,
+        "clean-tweets": 3785,
+        "clean-tweet-median-length": 9.0,
+        "trained-tweets": 695
     },
     "1F631": {
         "name": "FACE SCREAMING IN FEAR",
@@ -277,7 +305,7 @@
         "dont-train": false,
         "clean-tweets": 878,
         "clean-tweet-median-length": 9,
-        "trained-tweets": 522
+        "trained-tweets": 790
     },
     "1F525": {
         "name": "FIRE",
@@ -291,7 +319,7 @@
         "dont-train": false,
         "clean-tweets": 1704,
         "clean-tweet-median-length": 9.0,
-        "trained-tweets": 522
+        "trained-tweets": 790
     },
     "1F60E": {
         "name": "SMILING FACE WITH SUNGLASSES",
@@ -305,7 +333,7 @@
         "dont-train": false,
         "clean-tweets": 3237,
         "clean-tweet-median-length": 9.0,
-        "trained-tweets": 522
+        "trained-tweets": 790
     },
     "1F622": {
         "name": "CRYING FACE",
@@ -319,14 +347,21 @@
         "dont-train": false,
         "clean-tweets": 1485,
         "clean-tweet-median-length": 9,
-        "trained-tweets": 522
+        "trained-tweets": 789
     },
     "1F607": {
         "name": "SMILING FACE WITH HALO",
         "track-link": "https://emojitracker.com/details/1F607",
         "desc-link": "https://emojipedia.org/smiling-face-with-halo/",
         "emoji": "\ud83d\ude07",
-        "imported": false
+        "imported": true,
+        "total-tweets": 24900,
+        "sanitized-tweets": 19256,
+        "cleaned": true,
+        "dont-train": true,
+        "clean-tweets": 1374,
+        "clean-tweet-median-length": 9.0,
+        "trained-tweets": 1373
     },
     "1F608": {
         "name": "SMILING FACE WITH HORNS",
@@ -337,10 +372,10 @@
         "total-tweets": 18367,
         "sanitized-tweets": 15473,
         "cleaned": true,
-        "dont-train": false,
+        "dont-train": true,
         "clean-tweets": 1715,
         "clean-tweet-median-length": 9,
-        "trained-tweets": 521
+        "trained-tweets": 629
     },
     "270C": {
         "name": "VICTORY HAND",
@@ -351,10 +386,10 @@
         "total-tweets": 15100,
         "sanitized-tweets": 11275,
         "cleaned": true,
-        "dont-train": false,
+        "dont-train": true,
         "clean-tweets": 661,
         "clean-tweet-median-length": 9.0,
-        "trained-tweets": 521
+        "trained-tweets": 629
     },
     "1F62C": {
         "name": "GRIMACING FACE",
@@ -365,24 +400,38 @@
         "total-tweets": 24382,
         "sanitized-tweets": 20900,
         "cleaned": true,
-        "dont-train": false,
+        "dont-train": true,
         "clean-tweets": 1902,
         "clean-tweet-median-length": 9,
-        "trained-tweets": 519
+        "trained-tweets": 627
     },
     "1F44E": {
         "name": "THUMBS DOWN SIGN",
         "track-link": "https://emojitracker.com/details/1F44E",
         "desc-link": "https://emojipedia.org/thumbs-down/",
         "emoji": "\ud83d\udc4e",
-        "imported": false
+        "imported": true,
+        "total-tweets": 7800,
+        "sanitized-tweets": 6026,
+        "cleaned": true,
+        "dont-train": true,
+        "clean-tweets": 316,
+        "clean-tweet-median-length": 9.0,
+        "trained-tweets": 315
     },
     "1F351": {
         "name": "PEACH",
         "track-link": "https://emojitracker.com/details/1F351",
         "desc-link": "https://emojipedia.org/peach/",
         "emoji": "\ud83c\udf51",
-        "imported": false
+        "imported": true,
+        "total-tweets": 11400,
+        "sanitized-tweets": 7148,
+        "cleaned": true,
+        "dont-train": true,
+        "clean-tweets": 602,
+        "clean-tweet-median-length": 9.0,
+        "trained-tweets": 601
     },
     "1F620": {
         "name": "ANGRY FACE",
@@ -393,9 +442,9 @@
         "total-tweets": 15365,
         "sanitized-tweets": 13248,
         "cleaned": true,
-        "dont-train": false,
+        "dont-train": true,
         "clean-tweets": 591,
         "clean-tweet-median-length": 9,
-        "trained-tweets": 518
+        "trained-tweets": 590
     }
 }
