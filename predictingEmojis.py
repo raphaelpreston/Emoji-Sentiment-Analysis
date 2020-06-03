@@ -11,6 +11,10 @@ import joblib as joblib
 from ibm_cloud_sdk_core.authenticators import IAMAuthenticator
 from ibm_watson import ToneAnalyzerV3
 
+import json
+from http.server import HTTPServer, BaseHTTPRequestHandler
+
+
 ## INPUTS
 apiKEY = "opBx3zPqgE56cqb8LqK6HUJFipYv3xTRkrikHGHEEZcQ"
 apiURL = 'https://api.us-south.tone-analyzer.watson.cloud.ibm.com/instances/266134d5-d618-4a4e-a1e8-28b0e728f50e'
@@ -52,6 +56,40 @@ def predict_emoji(message, modelPathname): #input test string, pathname to model
     return model.predict(df)
 
 
-# Predict Tweet
-result = predict_emoji(testTweet, modelPathname)
-print(result)
+# Backend code START
+class Serve(BaseHTTPRequestHandler):
+
+    def do_GET(self):
+        if self.path == '/':
+            self.path = '/index.html'
+
+        try:
+            file_to_open = open("predictingEmojis.py").read()
+            self.send_response(200)
+        except:
+            file_to_open = "File Rafa found"
+            self.send_response(404)
+
+        self.end_headers()
+        self.wfile.write(bytes(file_to_open, 'utf-8'))
+
+    def do_POST(self):
+        
+        body = self.rfile.read(int(self.headers['Content-Length']))
+
+        self.send_response(2000)
+        self.end_headers()
+
+        body = json.loads(body.decode())
+
+        print(body['tweet'])
+
+        result = predict_emoji(body['tweet'], modelPathname)
+        print(result)
+
+        self.wfile.write(bytes(result[0], 'utf-8'))
+
+
+httpd = HTTPServer(('localhost', 8000), Serve)
+httpd.serve_forever()
+# Backend code END
